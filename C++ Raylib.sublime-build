@@ -1,0 +1,4 @@
+{
+    "selector": "source.c, source.cpp, source.c++, source.h, source.hpp, source.h++",
+    "shell_cmd": "python3 '/home/vinicius/.config/sublime-text/Packages/User/cpp_builder_selector.py' --path='$file' --libs='raylib' --version='gnu++23' --debug='on'",
+}

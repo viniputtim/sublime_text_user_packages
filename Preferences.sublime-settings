@@ -1,0 +1,24 @@
+{
+    "color_scheme": "Packages/Colorsublime - Themes/GitHub_Dark.tmTheme",
+    "font_face": "Fira Code",
+    "font_size": 12,
+    "rulers": [80, 100],
+    "ruler_style": "stippled",
+    "translate_tabs_to_spaces": true,
+    "draw_centered": false,
+    "highlight_line": true,
+    "caret_style": "smooth",
+    "draw_white_space": ["all"],
+    "trim_trailing_white_space_on_save": "not_on_caret",
+    "ensure_newline_at_eof_on_save": true,
+    "save_on_focus_lost": true,
+    "auto_complete_commit_on_tab": true,
+    "shift_tab_unindent": true,
+    "theme": "Seti.sublime-theme",
+    "highlight_modified_tabs": true,
+    "ignored_packages":
+    [
+        "Vintage",
+    ],
+    "index_files": true,
+}

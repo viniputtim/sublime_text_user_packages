@@ -1,0 +1,19 @@
+<snippet>
+    <content><![CDATA[
+# ifndef ${1:HEADER_NAME}
+# define ${1:HEADER_NAME}
+
+
+class ${2:ClassName}
+{
+    public:
+        ${2:ClassName}();
+        ~$2();
+};
+
+
+# endif
+]]></content>
+    <tabTrigger>header</tabTrigger>
+    <scope>source.c, source.cpp, source.c++</scope>
+</snippet>

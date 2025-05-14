@@ -1,0 +1,14 @@
+# ignore all
+*
+
+# except
+!.gitignore
+!C++ Multiple Files.sublime-build
+!C++ Raylib.sublime-build
+!cpp_builder.py
+!cpp_builder_selector.py
+!header.sublime-snippet
+!header_to_source.py
+!LICENSE
+!Preferences.sublime-settings
+!README.md
