@@ -12,6 +12,7 @@ Custom C++ build system for Sublime Text, designed for multi-file projects and o
 - 🐞 Debug mode toggle (`--debug=on|off`)
 - 🧬 C++ standard selection (`--version=c++23|c++17|...`)
 - 🧠 Smart file-type detection (header vs source)
+- 🧩 File Auto-Pairing
 
 ## 🗂️ Project Structure
 
@@ -59,8 +60,13 @@ Compiles all `.cpp` files inside 📁 *source*. Skips 📁 *tests* or 📁 *test
 
 Parses header files. Generates stub implementations for all class methods. Maintains class scope (`ClassName::method()`).
 
+### 🧩 File Auto-Pairing
+
+When you open a C/C++ source or header file, the plugin automatically looks for its paired file (e.g., `foo.cpp` ↔️ `foo.h`) and opens it if found. Works based on common folder structures like `src/` and `include/`.
+
 ## 🛠 Requirements
 
+- Sublime Text
 - g++ (compiler)
 - python3
 - Raylib installed (if using Raylib mode)
