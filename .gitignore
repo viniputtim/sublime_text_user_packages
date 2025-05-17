@@ -4,7 +4,8 @@
 # except
 !.gitignore
 !C++ Multiple Files.sublime-build
-!C++ Raylib.sublime-build
+!C++ Raylib Desktop.sublime-build
+!C++ Raylib Web Assembly.sublime-build
 !cpp_builder.py
 !cpp_builder_selector.py
 !header.sublime-snippet
@@ -13,3 +14,4 @@
 !Preferences.sublime-settings
 !README.md
 !open_pair_file.py
+!wasm_builder.py

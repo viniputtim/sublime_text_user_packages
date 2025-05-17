@@ -7,7 +7,7 @@ class MyFileOpenListener(sublime_plugin.EventListener):
     def on_load(self, view):
         file_path = view.file_name()
         file_name = os.path.basename(file_path)
-        file_noext = file_name.split('.')[0]
+        file_noext = os.path.splitext(file_name)[0]
         source_exts = ('.c', '.cpp', '.cxx')
         header_exts = ('.h', '.hpp', '.hxx')
         sources = ['source', 'src']
@@ -25,12 +25,12 @@ class MyFileOpenListener(sublime_plugin.EventListener):
             if not project_path:
                 return
 
-            include_paths = [os.path.join(project_path, folder) for folder in pair_folders]
+            pair_paths = [os.path.join(project_path, folder) for folder in pair_folders]
             search_files = [f'{file_noext}{ext}' for ext in pair_exts]
 
-            for include_path in include_paths:
+            for pair_path in pair_paths:
                 for search_file in search_files:
-                    full_path = os.path.join(include_path, subdirs_path, search_file)
+                    full_path = os.path.join(pair_path, subdirs_path, search_file)
 
                     if os.path.isfile(full_path):
                         window.open_file(full_path)
